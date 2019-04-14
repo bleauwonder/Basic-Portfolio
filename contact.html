@@ -3,17 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>Elyza Bleau</title>
-        <link rel="stylesheet" type="text/css" href="assets/style.css">
-        <div class="topnav">
-            <a classs="active" href="#home">Home</a>
-            <a href="#bio">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     </head>
+    <header><div class="topnav">
+            <a id="home" href="home">Elyza Bleau</a>
+            <a class="nav" id="about" href="about">About</a>
+            <a class="nav" id="portfolio" href="portfolio">Portfolio</a>
+            <a class="nav" id="contact" href="#contact">Contact</a>
+        </div>
+    </header>
     <body>
 
     <h1>Contact</h1>
+    <div class="panel-body">
         <form action="contact_me.php"></form>
             <label for="fullname">Name</label>
             <br>
@@ -27,5 +29,5 @@
             <br>
             <input type="text" id="message" name="message" placeholder="Message" style="height: 200px; width: 600px">
         </form>
-        
+        </div>
     </body>
