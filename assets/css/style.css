@@ -6,8 +6,9 @@ head {
 body {
     background-image: url(../../assets/white-waves/white-waves.png);
 }
+
 .header {
-    overflow: hidden;
+    overflow: auto;
     background-color: #ffffff;
     padding: 0px;
     border-bottom: 2px solid #cccccc;
@@ -157,18 +158,20 @@ li a {
     background-color: #777777;
     color: rgba(5, 160, 165, 0.753);
 }
+
 .box {
     font-family:'Georgia', Times, Times New Roman, serif;
-    font-size: 27px;
+    font-size: 22px;
+    padding: 10px 0px 0px 0px;
     width: 210px;
-    height: 60px;
+    height: 30px;
     background:#4aaaa5;
     text-align: center;
     color: #ffffff;
     position: absolute;
     z-index: 1;
     left: 20px;
-    top: 170px;
+    top: 190px;
     text-decoration: none;
 }
 
