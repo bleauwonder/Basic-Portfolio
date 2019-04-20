@@ -1,35 +1,21 @@
-<?php
-if($_POST["submit"]) {
-    $recipient="elzyableau.om@gmail.com"; //Enter your mail address
-    $subject="Contact from Website"; //Subject 
-    $sender=$_POST["name"];
-    $senderEmail=$_POST["email"];
-    $message=$_POST["comments"];
-    $mailBody="Name: $sender\nEmail Address: $senderEmail\n\nMessage: $message";
-    mail($recipient, $subject, $mailBody);
-    sleep(1);
-    header("Location:http://blog.antonyraphel.in/sample/"); // Set here redirect page or destination page
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Elyza Bleau</title>
+        <title>Elyza Bleau</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
         
     <header class="header">
-            <nav class="container2">
-                    <a id="logo" href="index.html" class="logo">Elyza Bleau</a>
-                        <div class="header-right">
-                            <a href="about.html">About</a>
-                            <a href="portfolio.html">Portfolio</a>
-                            <a href="contact.html">Contact</a>
-                        </div>
+        <nav class="container2">
+            <a id="logo" href="index.html" class="logo">Elyza Bleau</a>
+                <nav class="header-right">
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
                 </nav>
+        </nav>
     </header>
     
     <body>
@@ -38,17 +24,17 @@ if($_POST["submit"]) {
             <section class="panel-body1">
                 <form action="contact_me.php">
                     <label for="fullname">Name</label>
-                    <br>
+                            <br>
                         <input type="text" id="name" name="fullname" placeholder="  Your name" style="height: 20px; width: 600px">
-                    <br>
-                    <br>
+                            <br>
+                            <br>
                         <label for="email">Email</label>
-                    <br>
+                            <br>
                         <input type="text" id="email" name="email" placeholder="  example@gmail.com" style="height: 20px; width: 600px">
-                    <br>
-                    <br>                
+                            <br>
+                            <br>                
                         <label for="Message">Message</label>
-                    <br>
+                            <br>
                         <textarea type="text" id="message" name="message" style="height: 250px; width: 600px"></textarea>
                             <br>
                     <button type="text" id="submit" name="submit" placeholder="submit">Submit</button>        
@@ -58,7 +44,7 @@ if($_POST["submit"]) {
     </section>
     </body>
 
-    <div class="footer">
-            <p>Copyright©</p>
-          </div>
+    <footer class="footer">
+        <p>Copyright©</p>
+    </footer>
 </html>
